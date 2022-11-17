@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 const Food = () => {
     return (
@@ -18,7 +18,11 @@ const Food = () => {
                     <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/VietnameseMeatballsXiuMaiandBanhMi-1-1-150x150.jpeg" alt="com xiu mai"/>
                     <div class="list__food-item">
                         <div class="title__food">
-                            <p class="type__food-name">Cơm Xíu Mại</p>
+                                <p class="type__food-name">
+                                    <Link to="/fooddetails">
+                                        Cơm Xíu Mại
+                                    </Link>
+                                </p>
                             <div class="dot__line">
                             </div>
                             <p class="type__food-price">69,000 &#8363;</p>
@@ -30,7 +34,11 @@ const Food = () => {
                     <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/VietnameseMeatballsXiuMaiandBanhMi-1-1-150x150.jpeg" alt="com xiu mai"/>
                     <div class="list__food-item">
                         <div class="title__food">
-                            <div class="type__food-name">Cơm nem nướng</div>
+                            <p class="type__food-name">
+                                <Link to="/fooddetails">
+                                    Cơm nem nướng vạn vật
+                                </Link>
+                            </p>
                             <div class="dot__line"></div>
                             <div class="type__food-price">69,000 &#8363;</div>
                         </div>
@@ -53,7 +61,11 @@ const Food = () => {
                         <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
                             <div class="title__food">
-                                <p class="type__food-name">Cơm Xíu Mại</p>
+                                <p class="type__food-name">
+                                <Link to="/fooddetails">
+                                    Cơm nem nướng vạn vật
+                                </Link>
+                            </p>
                                 <div class="dot__line"></div>
                                 <p class="type__food-price">69,000 &#8363;</p>
                             </div>
@@ -64,7 +76,11 @@ const Food = () => {
                         <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
                             <div class="title__food">
-                                <p class="type__food-name">Cơm Xíu Mại</p>
+                                <p class="type__food-name">
+                                <Link to="/fooddetails">
+                                    Cơm nem nướng vạn vật
+                                </Link>
+                            </p>
                                 <div class="dot__line"></div>
                                 <p class="type__food-price">69,000 &#8363;</p>
                             </div>
@@ -75,7 +91,11 @@ const Food = () => {
                         <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
                             <div class="title__food">
-                                <p class="type__food-name">Cơm Xíu Mại</p>
+                                <p class="type__food-name">
+                                <Link to="/fooddetails">
+                                    Cơm nem nướng vạn vật
+                                </Link>
+                            </p>
                                 <div class="dot__line"></div>
                                 <p class="type__food-price">69,000 &#8363;</p>
                             </div>
@@ -99,7 +119,11 @@ const Food = () => {
                         <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
                             <div class="title__food">
-                                <p class="type__food-name">Cơm Xíu Mại</p>
+                                <p class="type__food-name">
+                                <Link to="/fooddetails">
+                                    Cơm nem nướng vạn vật
+                                </Link>
+                            </p>
                                 <div class="dot__line"></div>
                                 <p class="type__food-price">69,000 &#8363;</p>
                             </div>
@@ -110,7 +134,11 @@ const Food = () => {
                         <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
                             <div class="title__food">
-                                <p class="type__food-name">Cơm Xíu Mại</p>
+                                <p class="type__food-name">
+                                    <Link to="/fooddetails">
+                                        Cơm nem nướng vạn vật
+                                    </Link>
+                                </p>
                                 <div class="dot__line"></div>
                                 <p class="type__food-price">69,000 &#8363;</p>
                             </div>
@@ -121,7 +149,11 @@ const Food = () => {
                         <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
                             <div class="title__food">
-                                <p class="type__food-name">Cơm Xíu Mại</p>
+                                <p class="type__food-name">
+                                <Link to="/fooddetails">
+                                    Cơm nem nướng vạn vật
+                                </Link>
+                            </p>
                                 <div class="dot__line"></div>
                                 <p class="type__food-price">69,000 &#8363;</p>
                             </div>
@@ -132,7 +164,11 @@ const Food = () => {
                         <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
                             <div class="title__food">
-                                <p class="type__food-name">Cơm Xíu Mại</p>
+                                <p class="type__food-name">
+                                <Link to="/fooddetails">
+                                    Cơm nem nướng vạn vật
+                                </Link>
+                            </p>
                                 <div class="dot__line"></div>
                                 <p class="type__food-price">69,000 &#8363;</p>
                             </div>
