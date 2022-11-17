@@ -1,0 +1,10 @@
+/* .heading__menu{
+    display:flex;
+    flex-direction:row
+} */
+
+.double__line{
+    height: 1px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}

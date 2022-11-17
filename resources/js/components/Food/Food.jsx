@@ -4,7 +4,15 @@ import React from 'react'
 const Food = () => {
     return (
         <div>
-            <h1>text product food</h1>
+            <div class="heading__menu">
+                <div class="double__line">
+                </div>
+                <div>
+                    Com Dia
+                </div>
+                <div class="double__line">
+                </div>
+            </div>
         </div>
     )
 }
