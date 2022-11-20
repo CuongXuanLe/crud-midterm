@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Rice from './Rice'
+
 
 const Food = () => {
     return (
@@ -26,21 +28,6 @@ const Food = () => {
                             <div class="dot__line">
                             </div>
                             <p class="type__food-price">69,000 &#8363;</p>
-                        </div>
-                        <p class="desc_food">Bánh mì kẹp thịt heo Việt Nam</p>
-                    </div>
-                </div>
-                <div class="list__food">
-                    <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/VietnameseMeatballsXiuMaiandBanhMi-1-1-150x150.jpeg" alt="com xiu mai"/>
-                    <div class="list__food-item">
-                        <div class="title__food">
-                            <p class="type__food-name">
-                                <Link to="/fooddetails">
-                                    Cơm nem nướng vạn vật
-                                </Link>
-                            </p>
-                            <div class="dot__line"></div>
-                            <div class="type__food-price">69,000 &#8363;</div>
                         </div>
                         <p class="desc_food">Bánh mì kẹp thịt heo Việt Nam</p>
                     </div>
@@ -72,36 +59,6 @@ const Food = () => {
                             <p class="desc_food">Bánh mì kẹp thịt heo Việt Nam</p>
                         </div>
                     </div>
-                    <div class="list__food w-49">
-                        <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
-                        <div class="list__food-item">
-                            <div class="title__food">
-                                <p class="type__food-name">
-                                <Link to="/fooddetails">
-                                    Cơm nem nướng vạn vật
-                                </Link>
-                            </p>
-                                <div class="dot__line"></div>
-                                <p class="type__food-price">69,000 &#8363;</p>
-                            </div>
-                            <p class="desc_food">Bánh mì kẹp thịt heo Việt Nam</p>
-                        </div>
-                    </div>
-                    <div class="list__food w-49">
-                        <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
-                        <div class="list__food-item">
-                            <div class="title__food">
-                                <p class="type__food-name">
-                                <Link to="/fooddetails">
-                                    Cơm nem nướng vạn vật
-                                </Link>
-                            </p>
-                                <div class="dot__line"></div>
-                                <p class="type__food-price">69,000 &#8363;</p>
-                            </div>
-                            <p class="desc_food">Bánh mì kẹp thịt heo Việt Nam</p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="specify__menu">
@@ -115,51 +72,6 @@ const Food = () => {
                     </div>
                 </div>
                 <div class="wrap__items">
-                    <div class="list__food w-32">
-                        <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
-                        <div class="list__food-item">
-                            <div class="title__food">
-                                <p class="type__food-name">
-                                <Link to="/fooddetails">
-                                    Cơm nem nướng vạn vật
-                                </Link>
-                            </p>
-                                <div class="dot__line"></div>
-                                <p class="type__food-price">69,000 &#8363;</p>
-                            </div>
-                            <p class="desc_food">Bánh mì kẹp thịt heo Việt Nam</p>
-                        </div>
-                    </div>
-                    <div class="list__food w-32">
-                        <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
-                        <div class="list__food-item">
-                            <div class="title__food">
-                                <p class="type__food-name">
-                                    <Link to="/fooddetails">
-                                        Cơm nem nướng vạn vật
-                                    </Link>
-                                </p>
-                                <div class="dot__line"></div>
-                                <p class="type__food-price">69,000 &#8363;</p>
-                            </div>
-                            <p class="desc_food">Bánh mì kẹp thịt heo Việt Nam</p>
-                        </div>
-                    </div>
-                    <div class="list__food w-32">
-                        <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
-                        <div class="list__food-item">
-                            <div class="title__food">
-                                <p class="type__food-name">
-                                <Link to="/fooddetails">
-                                    Cơm nem nướng vạn vật
-                                </Link>
-                            </p>
-                                <div class="dot__line"></div>
-                                <p class="type__food-price">69,000 &#8363;</p>
-                            </div>
-                            <p class="desc_food">Bánh mì kẹp thịt heo Việt Nam</p>
-                        </div>
-                    </div>
                     <div class="list__food w-32">
                         <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
