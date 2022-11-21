@@ -17,10 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->text('description')->nullable();
-            $table->integer('price')->nullable();
-            $table->string('photo')->nullable();
-            $table->string('type')->nullable();
             $table->text('ingredient')->nullable();
+            $table->string('image')->nullable();
+            $table->integer('price')->nullable();
             $table->timestamps();
         });
     }
@@ -35,10 +34,3 @@ return new class extends Migration
         Schema::dropIfExists('food');
     }
 };
-            // $table->id();
-            // $table->string('name')->nullable();
-            // $table->text('description')->nullable();
-            // $table->integer('price')->nullable();
-            // $table->string('photo')->nullable();
-            // $table->string('type')->nullable();
-            // $table->text('ingredient')->nullable();
