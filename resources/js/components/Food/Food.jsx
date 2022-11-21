@@ -1,10 +1,30 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 
 const Food = () => {
+
+
+    const [products, setProducts] = useState([])
+
+    useEffect(() =>{
+        getProducts()
+    },[1])
+
+    const getProducts = async () => {
+        const res = await axios.get("/api/get_all_product")
+        .then(({data}) => {
+            console.log('data', data.food);
+
+            setProducts(data.food);
+        })
+    }
+
     return (
         <div class="container">
+            <Link to="/adminPage">
+                <button type=""> Admin </button>
+            </Link>
             <div class="specify__menu">
                 <div class="heading__menu">
                     <div class="double__line">
@@ -15,22 +35,26 @@ const Food = () => {
                     <div class="double__line">
                     </div>
                 </div>
-                <div class="list__food">
-                    <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/VietnameseMeatballsXiuMaiandBanhMi-1-1-150x150.jpeg" alt="com xiu mai"/>
-                    <div class="list__food-item">
-                        <div class="title__food">
-                                <p class="type__food-name">
-                                    <Link to="/fooddetails">
-                                        Cơm Xíu Mại
-                                    </Link>
-                                </p>
-                            <div class="dot__line">
+                {products.length > 0 &&
+                    products.map((product, key) => (
+                        <div class="list__food"  key={key}>
+                            <img class="food__img" src={product.photo} alt="com xiu mai"/>
+                            <div class="list__food-item">
+                                <div class="title__food">
+                                        <p class="type__food-name">
+                                            <Link to="/fooddetails">
+                                                {product.name}
+                                            </Link>
+                                        </p>
+                                    <div class="dot__line">
+                                    </div>
+                                    <p class="type__food-price">{product.price} &#8363;</p>
+                                </div>
+                                <p class="desc_food">{product.description}</p>
                             </div>
-                            <p class="type__food-price">69,000 &#8363;</p>
                         </div>
-                        <p class="desc_food">Bánh mì kẹp thịt heo Việt Nam</p>
-                    </div>
-                </div>
+                    ))}
+
             </div>
             <div class="specify__menu">
                 <div class="heading__menu">

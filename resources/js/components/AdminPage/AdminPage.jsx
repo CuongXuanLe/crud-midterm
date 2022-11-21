@@ -1,6 +1,7 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const AdminPage = () => {
 
@@ -8,6 +9,21 @@ const AdminPage = () => {
 
     const newProduct = () => {
         navigate("/product/new")
+    }
+
+    const [products, setProducts] = useState([])
+
+    useEffect(() =>{
+        getProducts()
+    },[1])
+
+    const getProducts = async () => {
+        const res = await axios.get("/api/get_all_product")
+        .then(({data}) => {
+            console.log('data', data.food);
+
+            setProducts(data.food);
+        })
     }
 
     return(
@@ -31,11 +47,15 @@ const AdminPage = () => {
                         <p>Ingredient</p>
                         <p>Actions</p>
                     </div>
-                    <div className="list__items">
-                        <img src="" height="40px" width="40px"/>
-                        <a href="/">Product Name</a>
-                        <p>Category</p>
-                        <p>50</p>
+
+                    {products.length > 0 &&
+                        products.map((product, key) => (
+
+                    <div className="list__items" key={key}>
+                        <img src={product.photo} height="40px" width="50px"/>
+                        <p>{product.name}</p>
+                        <p>{product.type}</p>
+                        <p>{product.ingredient}</p>
                         <div>
                             <button className="btn-icon success">
                                 <AiOutlineEdit/>
@@ -45,6 +65,7 @@ const AdminPage = () => {
                             </button>
                         </div>
                     </div>
+                    ))}
                 </div>
             </div>
         </div>

@@ -32,7 +32,7 @@ class FoodController extends Controller
         } else {
             $product -> photo = "image.png";
         }
-        $product->photo = $name;
+        // $product->photo = $name;
         $product->type = $request->type;
         $product->ingredient = $request->ingredient;
         $product->price = $request->price;

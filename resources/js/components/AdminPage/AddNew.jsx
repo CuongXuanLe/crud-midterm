@@ -34,16 +34,19 @@ const New = () => {
 
     const createProduct = async (e) => {
         e.preventDefault()
-        const formData = new FormData()
 
-        formData.append('name', name)
-        formData.append('description', description)
-        formData.append('photo', photo)
-        formData.append('type', type)
-        formData.append('ingredient', ingredient)
-        formData.append('price', price)
+        const formData = {
+            "name" : name,
+            "description" : description,
+            "photo" : photo,
+            "type": type,
+            "ingredient" : ingredient,
+            "price" : price
+        }
 
-        await axios.post("/api/add_product", formData)
+
+        console.log(formData);
+        await axios.post("/api/add_product/", formData)
         .then(({data}) => {
             toast.fire({
                 icon:"success",

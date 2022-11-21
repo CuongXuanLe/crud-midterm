@@ -10,7 +10,9 @@ const Router = () => {
     return(
         <div>
             <Routes>
-                <Route path="/" element={ <AdminPage /> } />
+                <Route path="/" element={ <Food /> } />
+                <Route path="/foodDetails" element={ <FoodDetails /> } />
+                <Route path="/adminPage" element={ <AdminPage /> } />
                 <Route path="/product/new" element={ <NewProduct/>} />
             </Routes>
         </div>
@@ -18,5 +20,6 @@ const Router = () => {
 }
 
 export default Router
-// <Route path="/" element={ <Food /> } />
-// <Route path="/fooddetails" element={ <FoodDetails /> } />
+
+// <Route path="/food" element={ <Food /> } />
+// <Route path="/foodDetails" element={ <FoodDetails /> } />

@@ -62,11 +62,11 @@ class vp_food extends Seeder
         //                 'photo' => 'http://at06.chonweb.vn/wp-content/uploads/2019/08/xaxieu.jpg',
         //                 'type' => $faker->text,
         //                 'ingredient' => $faker->text,
-                        
-                        
-                        
+
+
+
         //             ],
-                    
+
         //         ]);
         // }
     }
