@@ -11,7 +11,7 @@ class FoodController extends Controller
     public function get_all_product() {
         $products = Food::all();
         return response()->json([
-            'products' => $products
+            'food' => $products
         ], 200);
     }
 
