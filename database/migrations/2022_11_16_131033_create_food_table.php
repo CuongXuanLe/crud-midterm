@@ -17,9 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->text('description')->nullable();
-            $table->text('ingredient')->nullable();
-            $table->string('photo')->nullable();
             $table->integer('price')->nullable();
+            $table->string('photo')->nullable();
+            $table->string('type')->nullable();
+            $table->text('ingredient')->nullable();
             $table->timestamps();
         });
     }
