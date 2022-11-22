@@ -17,6 +17,10 @@ const AdminPage = () => {
         getProducts()
     },[1])
 
+    const editProduct = (id) => {
+        navigate("/product/edit/" + id)
+      }
+
     const getProducts = async () => {
         const res = await axios.get("/api/get_all_product")
         .then(({data}) => {
@@ -24,6 +28,33 @@ const AdminPage = () => {
 
             setProducts(data.food);
         })
+    }
+
+    const deleteProduct = async(id) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You can't reverse this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                axios.get(`/api/delete_product/${id}`)
+                    .then(() => {
+                        Swal.fire(
+                            "Deleted!",
+                            "Product successfully deleted",
+                            "success"
+                        );
+                        getProducts();
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
+            }
+        });
     }
 
     return(
@@ -52,16 +83,16 @@ const AdminPage = () => {
                         products.map((product, key) => (
 
                     <div className="list__items" key={key}>
-                        <img src={product.photo} height="40px" width="50px"/>
+                        <img src={`/upload/${product.photo}`} height="40px" width="50px"/>
                         <p>{product.name}</p>
                         <p>{product.type}</p>
                         <p>{product.ingredient}</p>
                         <div>
-                            <button className="btn-icon success">
+                            <button className="btn-icon success" onClick={() => editProduct(product.id)}>
                                 <AiOutlineEdit/>
                             </button>
                             <button className="btn-icon danger">
-                                <AiOutlineDelete/>
+                                <AiOutlineDelete onClick={() => deleteProduct(product.id)}/>
                             </button>
                         </div>
                     </div>
