@@ -30,7 +30,7 @@ class FoodController extends Controller
             $img->save($upload_path.$name);
             $product->photo = $name;
         } else {
-            $product -> photo = "image.png";
+            $product -> photo = "https://at06.mediawz.com/wp-content/uploads/2019/08/sweet-plum-pork-skewers-18101-1-2000x1200.jpeg";
         }
         // $product->photo = $name;
         $product->type = $request->type;

@@ -68,7 +68,7 @@ const Food = () => {
                 </div>
                 <div class="wrap__items">
                     <div class="list__food w-49">
-                        <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
+                        <img class="food__img" src="https://at06.mediawz.com/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
                             <div class="title__food">
                                 <p class="type__food-name">
@@ -96,7 +96,7 @@ const Food = () => {
                 </div>
                 <div class="wrap__items">
                     <div class="list__food w-32">
-                        <img class="food__img" src="http://at06.chonweb.vn/wp-content/uploads/2019/08/no-cook-chicken-banh-mi_1980x1320-119440-1-150x150.jpg" alt="banh mi heo quay"/>
+                        <img class="food__img" src="https://at06.mediawz.com/wp-content/uploads/2019/08/bo-kho-1-1-150x150.jpg" alt="banh mi heo quay"/>
                         <div class="list__food-item">
                             <div class="title__food">
                                 <p class="type__food-name">
